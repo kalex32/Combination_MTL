@@ -13,9 +13,9 @@ public class Combination {
                 else comb[i][j] = String.valueOf(random.nextInt(11));
             }
         }
-        for (int i = 0; i < comb.length; i++) {
-            for (int j = 0; j < comb[i].length; j++) {
-                System.out.print(comb[i][j] + "\t");
+        for (String[] strings : comb) {
+            for (String string : strings) {
+                System.out.print(string + "\t");
             }
             System.out.println();
         }
