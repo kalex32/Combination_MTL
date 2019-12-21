@@ -9,8 +9,8 @@ public class Combination {
         int[][] comb = new int[quantity][a];
         for (int i = 0; i < comb.length; i++) {
             for (int j = 0; j < comb[i].length; j++) {
-                comb[i][j] = random.nextInt(12);
-
+                if (j == 0) comb[i][j] = random.nextInt(8);
+                else comb[i][j] = random.nextInt(12);
             }
         }
         for (int i = 0; i < comb.length; i++) {
